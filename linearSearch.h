@@ -1,3 +1,4 @@
 #pragma once
+#include <vector>
 
-int linearSearch(vector<int> list, int val);
+int linearSearch(std::vector<int> list, int val);
