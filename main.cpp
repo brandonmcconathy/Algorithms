@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 #include "linearSearch.h"
+#include "binarySearch.h"
 
 int main()
 {

@@ -21,6 +21,9 @@
     <ClCompile Include="linearSearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="binarySearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="PropertySheet.props" />
@@ -31,6 +34,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="linearSearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="binarySearch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
