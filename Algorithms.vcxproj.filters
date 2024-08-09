@@ -24,6 +24,9 @@
     <ClCompile Include="binarySearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="bubbleSort.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="PropertySheet.props" />
@@ -37,6 +40,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="binarySearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bubbleSort.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

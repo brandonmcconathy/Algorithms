@@ -3,6 +3,8 @@
 #include "linearSearch.h"
 #include "binarySearch.h"
 
+#include "bubbleSort.h"
+
 int main()
 {
     std::vector<int> arr;
