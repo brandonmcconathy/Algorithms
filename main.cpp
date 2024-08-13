@@ -11,7 +11,7 @@
 
 int main()
 {
-    std::vector<int> arr = {5, 123, 7, 34, 8, 23, 9, 10, 12, 87, 9, 321, 674, 34, 9};
+    std::vector<int> arr = {72, 5, 123, 7, 34, 8, 23, 9, 10, 12, 87, 9, 321, 674, 34, 9};
 
     // Search
     // Linear Search
