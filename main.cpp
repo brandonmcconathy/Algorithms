@@ -25,10 +25,17 @@ int main()
 
     // Search
     // Linear Search
-    std::cout << "Linear Search: " << linearSearch(arr, 12) << std::endl;
+    std::cout << "\nLinear Search: " << std::endl;
+    std::cout << "Number: 12, Index: " << linearSearch(arr, 12) << std::endl;
 
     // Binary Search
-    std::cout << "Binary Search: " << binarySearch(arr, 34) << std::endl;
+    std::cout << "\nBinary Search: " << std::endl;
+    std::cout << "Number: 34, Index: " << binarySearch(arr, 34) << std::endl;
+    std::cout << "Number: 5, Index: " << binarySearch(arr, 5) << std::endl;
+    std::cout << "Number: 321, Index: " << binarySearch(arr, 321) << std::endl;
+    std::cout << "Number: 9, Index: " << binarySearch(arr, 9) << std::endl;
+    std::cout << "Number: 12, Index: " << binarySearch(arr, 12) << std::endl;
+
 
     return 0;
 }
