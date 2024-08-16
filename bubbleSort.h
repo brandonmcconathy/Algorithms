@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-void bubbleSort(std::vector<int>& list);
+void bubbleSort(std::vector<int>& list, bool reverse);
