@@ -4,6 +4,7 @@
 
 // Sort
 #include "bubbleSort.h"
+#include "quickSort.h"
 
 // Search
 #include "linearSearch.h"
@@ -26,6 +27,18 @@ int main()
     bubbleSort(arr, false);
     printList(arr);
     std::cout << std::endl;
+
+    // Quicksort
+    std::cout << "Before quicksort:" << std::endl;
+    arr = { 72, 5, 123, 7, 34, 8, 23, 9, 10, 12, 87, 9, 321, 674, 34, 9 };
+    printList(arr);
+    std::cout << std::endl;
+
+    std::cout << "Quicksort" << std::endl;
+    quickSort(arr);
+    printList(arr);
+    std::cout << std::endl;
+
 
     // Search
     // Linear Search
