@@ -1,38 +1,61 @@
 #include "mergeSort.h"
 #include <vector>
 
-static std::vector<int> merge(std::vector<int> left, std::vector<int> right) {
+static void merge(std::vector<int>& list, int left, int mid, int right) {
 
-	std::vector<int> sortedList;
+	int n1 = mid - left + 1;
+	int n2 = right - mid;
+
+	std::vector<int> leftList(n1), rightList(n2);
+
+	for (int i = 0; i < n1; ++i) {
+		leftList[i] = list[i + left];
+	}
+	for (int i = 0; i < n2; ++i) {
+		rightList[i] = list[i + mid + 1];
+	}
+
 	int l = 0;
 	int r = 0;
-	while (sortedList.size() != left.size() + right.size()) {
-		if (r >= right.size() || left[l] < right[r]) {
-			sortedList.push_back(left[l]);
+	int k = left;
+
+	while (l < leftList.size() && r < rightList.size()) {
+		if (leftList[l] < rightList[r]) {
+			list[k] = leftList[l];
 			++l;
 		}
 		else {
-			sortedList.push_back(right[r]);
+			list[k] = rightList[r];
 			++r;
 		}
+		++k;
 	}
-	return sortedList;
+	while (l < leftList.size()) {
+		list[k] = leftList[l];
+		++l;
+		++k;
+	}
+	while (r < rightList.size()) {
+		list[k] = rightList[r];
+		++r;
+		++k;
+	}
 }
 
-static std::vector<int> mergeHelper(std::vector<int> list) {
-	if (list.size() <= 1) {
-		return list;
+static void mergeHelper(std::vector<int>& list, int left, int right) {
+	if (left >= right) {
+		return;
 	}
 
-	std::vector<int> sortedLeft(list.begin(), list.begin() + list.size() / 2);
-	std::vector<int> sortedRight((list.begin() + list.size() / 2) + 1, list.end());
-
-	return merge(sortedLeft, sortedRight);
+	int mid = left + (right - left) / 2;
+	mergeHelper(list, left, mid);
+	mergeHelper(list, mid + 1, right);
+	merge(list, left, mid, right);
 }
 
 void mergeSort(std::vector<int>& list) {
 	if (list.size() <= 1) {
 		return;
 	}
-	list = mergeHelper(list);
+	mergeHelper(list, 0, list.size() - 1);
 }
