@@ -107,6 +107,9 @@
     <ClCompile Include="bubbleSort.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="jumpSearch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="linearSearch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
@@ -133,6 +136,7 @@
   <ItemGroup>
     <ClInclude Include="binarySearch.h" />
     <ClInclude Include="bubbleSort.h" />
+    <ClInclude Include="jumpSearch.h" />
     <ClInclude Include="linearSearch.h" />
     <ClInclude Include="mergeSort.h" />
     <ClInclude Include="printList.h" />
