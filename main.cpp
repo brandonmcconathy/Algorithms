@@ -20,7 +20,7 @@ int main()
     printList(arr);
     std::cout << std::endl;
 
-    // Bubble Sort
+    // Bubble Sort, O(n^2)
     std::cout << "Bubble Sort Reverse:" << std::endl;
     bubbleSort(arr, true);
     printList(arr);
@@ -29,7 +29,7 @@ int main()
     printList(arr);
     std::cout << std::endl;
 
-    // Quick Sort
+    // Quick Sort, O(nlogn), worst case O(n^2)
     std::cout << "Before quicksort:" << std::endl;
     arr = { 72, 5, 123, 7, 34, 8, 23, 9, 10, 12, 87, 9, 321, 674, 34, 9 };
     printList(arr);
@@ -40,7 +40,7 @@ int main()
     printList(arr);
     std::cout << std::endl;
 
-    // Merge Sort
+    // Merge Sort, O(nlogn)
     std::cout << "Before mergesort:" << std::endl;
     arr = { 72, 5, 123, 7, 34, 8, 23, 9, 10, 12, 87, 9, 321, 674, 34, 9 };
     printList(arr);
@@ -53,12 +53,12 @@ int main()
 
 
     // Search
-    // Linear Search
+    // Linear Search, O(n)
     std::cout << "Linear Search: " << std::endl;
     std::cout << "Number: 12, Index: " << linearSearch(arr, 12) << std::endl;
     std::cout << std::endl;
 
-    // Binary Search
+    // Binary Search, O(logn)
     std::cout << "Binary Search: " << std::endl;
     std::cout << "Number: 34, Index: " << binarySearch(arr, 34) << std::endl;
     std::cout << "Number: 5, Index: " << binarySearch(arr, 5) << std::endl;
