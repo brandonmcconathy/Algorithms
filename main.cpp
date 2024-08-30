@@ -10,6 +10,7 @@
 // Search
 #include "linearSearch.h"
 #include "binarySearch.h"
+#include "jumpSearch.h"
 
 int main()
 {
@@ -65,6 +66,15 @@ int main()
     std::cout << "Number: 321, Index: " << binarySearch(arr, 321) << std::endl;
     std::cout << "Number: 9, Index: " << binarySearch(arr, 9) << std::endl;
     std::cout << "Number: 12, Index: " << binarySearch(arr, 12) << std::endl;
+    std::cout << std::endl;
+
+    // Jump Search, O(sqrt(n))
+    std::cout << "Jump Search: " << std::endl;
+    std::cout << "Number: 34, Index: " << jumpSearch(arr, 34) << std::endl;
+    std::cout << "Number: 5, Index: " << jumpSearch(arr, 5) << std::endl;
+    std::cout << "Number: 321, Index: " << jumpSearch(arr, 321) << std::endl;
+    std::cout << "Number: 9, Index: " << jumpSearch(arr, 9) << std::endl;
+    std::cout << "Number: 12, Index: " << jumpSearch(arr, 12) << std::endl;
     std::cout << std::endl;
 
 
