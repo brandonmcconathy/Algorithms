@@ -56,6 +56,10 @@ int main()
     // Search
     // Linear Search, O(n)
     std::cout << "Linear Search: " << std::endl;
+    std::cout << "Number: 34, Index: " << linearSearch(arr, 34) << std::endl;
+    std::cout << "Number: 5, Index: " << linearSearch(arr, 5) << std::endl;
+    std::cout << "Number: 321, Index: " << linearSearch(arr, 321) << std::endl;
+    std::cout << "Number: 9, Index: " << linearSearch(arr, 9) << std::endl;
     std::cout << "Number: 12, Index: " << linearSearch(arr, 12) << std::endl;
     std::cout << std::endl;
 
